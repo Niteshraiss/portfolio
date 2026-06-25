@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Rai — Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        tailwind.config={theme:{extend:{fontFamily:{sans:['DM Sans','sans-serif'],display:['Oswald','sans-serif']}}}}
+    </script>
+
+</head>
+<body>
+    <div class="preloader" id="pre">
+        <div class="pre-num" id="preN">0</div>
+        <div class="pre-lbl">Loading Experience</div>
+        <div class="pre-bar"><div class="pre-fill" id="preF"></div></div>
+    </div>
+    <div class="grain"></div>
+    <div class="c-dot" id="cD"></div>
+    <div class="c-ring" id="cR"></div>
+
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo ht">N<span>.</span>R</a>
+        <div class="nav-r">
+            <div class="nav-links">
+                <a href="#about" class="ht">About</a>
+                <a href="#skills" class="ht">Skills</a>
+                <a href="#experience" class="ht">Experience</a>
+                <a href="#projects" class="ht">Projects</a>
+                <a href="#contact" class="ht">Contact</a>
+            </div>
+            <button class="th-btn ht" id="thBtn" aria-label="Toggle theme">
+                <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+            <div class="ham" id="ham"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="mob-menu" id="mobM">
+        <a href="#about" class="mlk ht">About</a>
+        <a href="#skills" class="mlk ht">Skills</a>
+        <a href="#experience" class="mlk ht">Experience</a>
+        <a href="#projects" class="mlk ht">Projects</a>
+        <a href="#education" class="mlk ht">Education</a>
+        <a href="#contact" class="mlk ht">Contact</a>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="h-blob hb1"></div>
+        <div class="h-blob hb2"></div>
+        <div class="h-line" id="hLn"></div>
+        <h1 class="h-name" id="hNm">NITESH RAI</h1>
+        <p class="h-sub" id="hSb">Full Stack Developer · Backend Specialist · PHP & Laravel</p>
+        <div class="h-scr" id="hSc"><span>Scroll</span><div class="scr-ln"></div></div>
+    </section>
+
+    <div class="mq-sec">
+        <div class="mq-tk">
+            <div class="mq-i">Laravel <div class="mq-d"></div></div>
+            <div class="mq-i">PHP <div class="mq-d"></div></div>
+            <div class="mq-i">MySQL <div class="mq-d"></div></div>
+            <div class="mq-i">JavaScript <div class="mq-d"></div></div>
+            <div class="mq-i">REST APIs <div class="mq-d"></div></div>
+            <div class="mq-i">Bootstrap <div class="mq-d"></div></div>
+            <div class="mq-i">AJAX <div class="mq-d"></div></div>
+            <div class="mq-i">jQuery <div class="mq-d"></div></div>
+            <div class="mq-i">Git <div class="mq-d"></div></div>
+            <div class="mq-i">WordPress <div class="mq-d"></div></div>
+            <div class="mq-i">MVC <div class="mq-d"></div></div>
+            <div class="mq-i">Eloquent ORM <div class="mq-d"></div></div>
+            <div class="mq-i">Laravel <div class="mq-d"></div></div>
+            <div class="mq-i">PHP <div class="mq-d"></div></div>
+            <div class="mq-i">MySQL <div class="mq-d"></div></div>
+            <div class="mq-i">JavaScript <div class="mq-d"></div></div>
+            <div class="mq-i">REST APIs <div class="mq-d"></div></div>
+            <div class="mq-i">Bootstrap <div class="mq-d"></div></div>
+            <div class="mq-i">AJAX <div class="mq-d"></div></div>
+            <div class="mq-i">jQuery <div class="mq-d"></div></div>
+            <div class="mq-i">Git <div class="mq-d"></div></div>
+            <div class="mq-i">WordPress <div class="mq-d"></div></div>
+            <div class="mq-i">MVC <div class="mq-d"></div></div>
+            <div class="mq-i">Eloquent ORM <div class="mq-d"></div></div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/coderdesk/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="ab-g">
+                <div>
+                    <div class="sec-lb rv">01 — About</div>
+                    <h2 class="sec-tt rv" style="--dl:.1s">Crafting Full Stack<br>Solutions That<br>Deliver Results</h2>
+                </div>
+                <div>
+                    <p class="ab-txt rv" style="--dl:.2s"><strong>Full Stack Developer</strong> with hands-on experience building and deploying production web applications using PHP, Laravel, MySQL, JavaScript, AJAX, and Bootstrap. Developed a live resort management website and a custom blogging platform featuring authentication, administrative dashboards, content management, inquiry workflows, and database-driven functionality.</p>
+                    <p class="ab-txt rv" style="--dl:.3s;margin-top:1.15rem">Experienced in <strong>backend development, REST APIs, database design, deployment, maintenance,</strong> and client-focused solution delivery. I believe in writing clean, maintainable code that solves real problems for real users.</p>
+                    <div class="ab-stats rv" style="--dl:.4s">
+                        <div class="st-i"><div class="st-lbl">Production Apps</div><div class="st-sub">Deployed & Live</div></div>
+                        <div class="st-i"><div class="st-lbl">Research Papers</div><div class="st-sub">Published Work</div></div>
+                        <div class="st-i"><div class="st-lbl">Client Projects</div><div class="st-sub">End-to-End Delivery</div></div>
+                        <div class="st-i"><div class="st-lbl">Languages</div><div class="st-sub">English · Hindi · Nepali</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section class="sec" id="skills">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/codescreen/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="sec-lb rv">02 — Skills</div>
+            <h2 class="sec-tt rv" style="--dl:.1s">Technical Arsenal</h2>
+            <div class="sk-g">
+                <div class="rv" style="--dl:.15s"><div class="sk-cat">Backend</div><div class="sk-chips"><span class="sk-chip ht">PHP</span><span class="sk-chip ht">Laravel</span><span class="sk-chip ht">REST APIs</span></div></div>
+                <div class="rv" style="--dl:.2s"><div class="sk-cat">Database</div><div class="sk-chips"><span class="sk-chip ht">MySQL</span><span class="sk-chip ht">SQL</span></div></div>
+                <div class="rv" style="--dl:.25s"><div class="sk-cat">Frontend</div><div class="sk-chips"><span class="sk-chip ht">HTML5</span><span class="sk-chip ht">CSS3</span><span class="sk-chip ht">Bootstrap</span><span class="sk-chip ht">JavaScript</span><span class="sk-chip ht">AJAX</span><span class="sk-chip ht">jQuery</span></div></div>
+                <div class="rv" style="--dl:.3s"><div class="sk-cat">Tools</div><div class="sk-chips"><span class="sk-chip ht">Git</span><span class="sk-chip ht">GitHub</span><span class="sk-chip ht">WordPress</span></div></div>
+                <div class="rv" style="--dl:.35s"><div class="sk-cat">Concepts</div><div class="sk-chips"><span class="sk-chip ht">Authentication</span><span class="sk-chip ht">Authorization</span><span class="sk-chip ht">MVC Architecture</span><span class="sk-chip ht">Eloquent ORM</span><span class="sk-chip ht">Migrations</span><span class="sk-chip ht">Validation</span><span class="sk-chip ht">RBAC</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mq-sec">
+        <div class="mq-tk" style="animation-direction:reverse;animation-duration:30s">
+            <div class="mq-i">Backend Development <div class="mq-d"></div></div>
+            <div class="mq-i">Database Design <div class="mq-d"></div></div>
+            <div class="mq-i">API Development <div class="mq-d"></div></div>
+            <div class="mq-i">Deployment <div class="mq-d"></div></div>
+            <div class="mq-i">Problem Solving <div class="mq-d"></div></div>
+            <div class="mq-i">Client Communication <div class="mq-d"></div></div>
+            <div class="mq-i">Requirement Analysis <div class="mq-d"></div></div>
+            <div class="mq-i">Team Collaboration <div class="mq-d"></div></div>
+            <div class="mq-i">Backend Development <div class="mq-d"></div></div>
+            <div class="mq-i">Database Design <div class="mq-d"></div></div>
+            <div class="mq-i">API Development <div class="mq-d"></div></div>
+            <div class="mq-i">Deployment <div class="mq-d"></div></div>
+            <div class="mq-i">Problem Solving <div class="mq-d"></div></div>
+            <div class="mq-i">Client Communication <div class="mq-d"></div></div>
+            <div class="mq-i">Requirement Analysis <div class="mq-d"></div></div>
+            <div class="mq-i">Team Collaboration <div class="mq-d"></div></div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section class="sec" id="experience">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/workoffice/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="sec-lb rv">03 — Experience</div>
+            <h2 class="sec-tt rv" style="--dl:.1s">Professional Journey</h2>
+            <div class="tl">
+                <div class="tl-e rv" style="--dl:.15s">
+                    <div class="tl-dot"></div>
+                    <div class="tl-dt">Aug 2024 — Present</div>
+                    <div class="tl-rl">Freelance Full Stack Developer</div>
+                    <div class="tl-co">Self-Employed</div>
+                    <ul class="tl-b">
+                        <li>Developed and deployed Laravel-based applications including the live Sikkim Vrindavan Resort platform and Mountaindrawer blogging system.</li>
+                        <li>Designed MySQL database schemas and implemented authentication, administrative dashboards, content management, inquiry management, and media management.</li>
+                        <li>Built responsive user interfaces using Bootstrap, JavaScript, AJAX, and jQuery.</li>
+                        <li>Gathered requirements, deployed to production hosting, and performed ongoing maintenance.</li>
+                    </ul>
+                </div>
+                <div class="tl-e rv" style="--dl:.2s">
+                    <div class="tl-dot"></div>
+                    <div class="tl-dt">Mar 2024 — Jul 2024</div>
+                    <div class="tl-rl">Backend Developer Trainee</div>
+                    <div class="tl-co">EligoCS</div>
+                    <ul class="tl-b">
+                        <li>Promoted from Intern based on project contributions and performance.</li>
+                        <li>Developed Laravel backend — authentication, authorization, user management, validation, database-driven workflows.</li>
+                        <li>Worked with Eloquent ORM, migrations, DataTables, REST APIs, and MySQL.</li>
+                        <li>Collaborated using Git workflows and contributed to debugging and feature enhancements.</li>
+                    </ul>
+                </div>
+                <div class="tl-e rv" style="--dl:.25s">
+                    <div class="tl-dot"></div>
+                    <div class="tl-dt">Sep 2023 — Feb 2024</div>
+                    <div class="tl-rl">Backend Developer Intern</div>
+                    <div class="tl-co">EligoCS</div>
+                    <ul class="tl-b">
+                        <li>Developed backend features using Laravel, MySQL, AJAX, and jQuery.</li>
+                        <li>Assisted in feature implementation, issue resolution, and application maintenance.</li>
+                    </ul>
+                </div>
+                <div class="tl-e rv" style="--dl:.3s">
+                    <div class="tl-dot"></div>
+                    <div class="tl-dt">Jan 2021 — Jun 2021</div>
+                    <div class="tl-rl">Web Development Intern</div>
+                    <div class="tl-co">Suvarna Technosoft</div>
+                    <ul class="tl-b">
+                        <li>Developed responsive WordPress websites and improved usability across client-facing projects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section class="proj-sec" id="projects">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/webdesign/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="proj-hd">
+            <div class="sec-c">
+                <div class="sec-lb rv">04 — Projects</div>
+                <h2 class="sec-tt rv" style="--dl:.1s">Featured Work</h2>
+            </div>
+        </div>
+        <div class="proj-tw">
+            <div class="proj-tk" id="pTk">
+                <div class="proj-card rv-s" style="--dl:.15s">
+                    <div class="proj-vis"><div class="proj-vbg pv1"></div><div class="proj-vl">SVR</div></div>
+                    <div class="proj-info">
+                        <div class="proj-cat">Live Project — Laravel</div>
+                        <div class="proj-ttl">Sikkim Vrindavan Resort</div>
+                        <p class="proj-desc">Complete resort management website — admin authentication, dashboard, inquiry and event management, media gallery, and content administration for a real client.</p>
+                        <a href="https://vrindavanresortsikkim.com" target="_blank" class="proj-link ht">View Live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                    </div>
+                </div>
+                <div class="proj-card rv-s" style="--dl:.25s">
+                    <div class="proj-vis"><div class="proj-vbg pv2"></div><div class="proj-vl">MD</div></div>
+                    <div class="proj-info">
+                        <div class="proj-cat">Full Project — Laravel</div>
+                        <div class="proj-ttl">Mountaindrawer</div>
+                        <p class="proj-desc">Blogging platform with authentication, admin dashboards, category and tag management, image uploads, AJAX functionality, and SEO-focused content management.</p>
+                        <a href="#" class="proj-link ht">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-hint rv" style="--dl:.35s"><span>Swipe to explore</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="sec" id="education">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/unilib/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="sec-lb rv">05 — Education</div>
+            <h2 class="sec-tt rv" style="--dl:.1s">Academic Background</h2>
+            <div class="edu-l">
+                <div class="edu-i rv" style="--dl:.15s"><div class="edu-y">2021 — 2023</div><div class="edu-d">M.Tech in Computer Science</div><div class="edu-s">APG Shimla University</div></div>
+                <div class="edu-i rv" style="--dl:.2s"><div class="edu-y">2018 — 2021</div><div class="edu-d">B.Tech in Computer Science</div><div class="edu-s">Sikkim Manipal Institute of Technology</div></div>
+                <div class="edu-i rv" style="--dl:.25s"><div class="edu-y">2016 — 2018</div><div class="edu-d">Diploma in Computer Engineering</div><div class="edu-s">ATTC, Sikkim</div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PUBLICATIONS -->
+    <section class="sec">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/researchpaper/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="sec-lb rv">06 — Publications</div>
+            <h2 class="sec-tt rv" style="--dl:.1s">Research Work</h2>
+            <div class="pub-g">
+                <div class="pub-c rv-s" style="--dl:.15s"><div class="pub-v">Springer</div><div class="pub-t">Moving Object Detection in 2D Plane using YOLOv3</div></div>
+                <div class="pub-c rv-s" style="--dl:.2s"><div class="pub-v">Research Paper</div><div class="pub-t">Monkeypox & Acne Detection using AlexNet CNN</div></div>
+                <div class="pub-c rv-s" style="--dl:.25s"><div class="pub-v">IJCRT</div><div class="pub-t">Detection of Various Skin Diseases: A Review</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRENGTHS & LANGUAGES -->
+    <section class="sec">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/teamcollab/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="sec-c">
+            <div class="ab-g">
+                <div>
+                    <div class="sec-lb rv">07 — Strengths</div>
+                    <h2 class="sec-tt rv" style="--dl:.1s">What I<br>Bring To<br>The Table</h2>
+                </div>
+                <div>
+                    <div class="str-w rv" style="--dl:.15s">
+                        <div class="str-i ht">Problem Solving</div>
+                        <div class="str-i ht">Requirement Analysis</div>
+                        <div class="str-i ht">Team Collaboration</div>
+                        <div class="str-i ht">Client Communication</div>
+                        <div class="str-i ht">Attention to Detail</div>
+                    </div>
+                    <div style="margin-top:2.5rem">
+                        <div class="sec-lb rv" style="--dl:.2s">Languages</div>
+                        <div class="lang-l rv" style="--dl:.25s">
+                            <div class="lang-i"><span>English</span></div>
+                            <div class="lang-i"><span>Hindi</span></div>
+                            <div class="lang-i"><span>Nepali</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section class="sec ct-sec" id="contact">
+        <div class="sec-bg" style="background-image:url('https://picsum.photos/seed/sendmessage/1400/900')"></div>
+        <div class="sec-bg-vignette"></div>
+        <div class="ct-bg">LET'S TALK</div>
+        <div class="sec-c" style="position:relative;z-index:2">
+            <div class="sec-lb rv" style="justify-content:center">08 — Contact</div>
+            <h2 class="ct-tt rv" style="--dl:.1s">Let's Build<br>Something <em>Great</em></h2>
+            <p class="ct-sub rv" style="--dl:.2s">Have a project in mind or need a full stack developer who gets things done? I'd love to hear from you.</p>
+            <div class="rv" style="--dl:.3s"><a href="mailto:niteshrai182@gmail.com" class="ct-email ht">niteshrai182@gmail.com</a></div>
+            <div class="ct-links rv" style="--dl:.4s">
+                <a href="https://linkedin.com/in/nitesh-rai-a05988149" target="_blank" class="ct-link ht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+                <a href="https://github.com/Niteshraiss" target="_blank" class="ct-link ht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="foot-txt">© 2025 Nitesh Rai. All rights reserved.</div>
+        <div class="foot-links">
+            <a href="https://linkedin.com/in/nitesh-rai-a05988149" target="_blank" class="ht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://github.com/Niteshraiss" target="_blank" class="ht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="mailto:niteshrai182@gmail.com" class="ht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+    </footer>
+
+ <script src="index.js"></script>
+</body>
+</html>
